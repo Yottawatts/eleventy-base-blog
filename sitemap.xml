@@ -28,26 +28,31 @@
 	
 	<url>
 		<loc>https://yottawatts.github.io/eleventy-base-blog/about/</loc>
-		<lastmod>2025-07-14</lastmod>
+		<lastmod>2025-07-17</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://yottawatts.github.io/eleventy-base-blog/blog/</loc>
-		<lastmod>2025-07-14</lastmod>
+		<lastmod>2025-07-17</lastmod>
+	</url>
+	
+	<url>
+		<loc>https://yottawatts.github.io/eleventy-base-blog/gallery/</loc>
+		<lastmod>2025-07-17</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://yottawatts.github.io/eleventy-base-blog/</loc>
-		<lastmod>2025-07-14</lastmod>
+		<lastmod>2025-07-17</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://yottawatts.github.io/eleventy-base-blog/tags/</loc>
-		<lastmod>2025-07-14</lastmod>
+		<lastmod>2025-07-17</lastmod>
 	</url>
 	
 	<url>
 		<loc>https://yottawatts.github.io/eleventy-base-blog/feed/feed.xml</loc>
-		<lastmod>2025-07-14</lastmod>
+		<lastmod>2025-07-17</lastmod>
 	</url>
 </urlset>
