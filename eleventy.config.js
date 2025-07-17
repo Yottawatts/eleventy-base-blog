@@ -22,6 +22,12 @@ export default async function(eleventyConfig) {
     })
     .addPassthroughCopy("./content/feed/pretty-atom-feed.xsl");
 
+	  // Copy your compiled Tailwind CSS from _includes → docs/css
+  eleventyConfig.addPassthroughCopy({
+    "_includes/css/tw.css": "css/tw.css"
+  	});
+  eleventyConfig.addPassthroughCopy("fonts");
+
   // Watch targets
   eleventyConfig.addWatchTarget("css/**/*.css");
   eleventyConfig.addWatchTarget("content/**/*.{svg,webp,png,jpg,jpeg,gif}");

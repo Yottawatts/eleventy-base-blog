@@ -6,11 +6,12 @@
   <title>{{ title or metadata.title }}</title>
   <meta name="description" content="{{ description or metadata.description }}">
   <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+  <link rel="stylesheet" href="/css/tw.css">
 
-  {!-- Inline the freshly-built Tailwind bundle for best performance --}
-  <style>{% include "css/tw.css" %}</style>
+  <!-- Inline the freshly-built Tailwind bundle -->
+  <style>{% include "css/tailwind.css" %}</style>
 
-  {!-- JavaScript bundle for heading anchors or other scripts --}
+  <!-- Heading anchors JavaScript -->
   <script type="module">{% include "node_modules/@zachleat/heading-anchors/heading-anchors.js" %}</script>
 </head>
 <body>
@@ -23,9 +24,8 @@
       <ul class="nav flex gap-4">
         {%- for entry in collections.all | eleventyNavigation %}
           <li class="nav-item">
-            <a href="{{ entry.url }}" 
-               class="{% if entry.url == page.url %}underline{% endif %}"
-               aria-current="{{ entry.url == page.url ? 'page' }}">
+            <a href="{{ entry.url }}"
+               {% if entry.url == page.url %}aria-current="page" class="underline"{% endif %}>
               {{ entry.title }}
             </a>
           </li>
@@ -41,9 +41,7 @@
   </main>
 
   <footer class="border-t border-macMid bg-macLight p-4 text-center text-sm">
-    <p>
-      <em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a></em>
-    </p>
+    <p><em>Built with <a href="https://www.11ty.dev/">{{ eleventy.generator }}</a></em></p>
   </footer>
 
   <script type="module" src="{% getBundleFileUrl "js" %}"></script>

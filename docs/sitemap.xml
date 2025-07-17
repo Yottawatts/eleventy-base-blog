@@ -22,6 +22,11 @@
 	</url>
 	
 	<url>
+		<loc>https://yottawatts.github.io/eleventy-base-blog/blog/fifthpost/</loc>
+		<lastmod>2023-01-23</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://yottawatts.github.io/eleventy-base-blog/blog/my-first-post/</loc>
 		<lastmod>2025-07-14</lastmod>
 	</url>
@@ -47,7 +52,12 @@
 	</url>
 	
 	<url>
+		<loc>https://yottawatts.github.io/eleventy-base-blog/gallery/</loc>
+		<lastmod>2025-07-16</lastmod>
+	</url>
+	
+	<url>
 		<loc>https://yottawatts.github.io/eleventy-base-blog/feed/feed.xml</loc>
-		<lastmod>2025-07-14</lastmod>
+		<lastmod>2025-07-17</lastmod>
 	</url>
 </urlset>
